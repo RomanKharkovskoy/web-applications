@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Авторизация/Регистрация</title>
+  <link rel="stylesheet" href="src/css/auth.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Выберите действие</h2>
+    <form action="src/actions/auth/process.php" method="post">
+      <label for="action">Выберите:</label>
+      <select name="action" id="action">
+        <option value="login">Авторизация</option>
+        <option value="register">Регистрация</option>
+      </select>
+      <br>
+      <br>
+      <button type="submit">Перейти</button>
+    </form>
+  </div>
+</body>
+</html>
